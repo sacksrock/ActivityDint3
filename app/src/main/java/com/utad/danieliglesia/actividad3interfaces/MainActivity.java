@@ -14,28 +14,35 @@ public class MainActivity extends AppCompatActivity {
     MainActivityFragment mainActivityFragment;
     BlankFragment2 fragment2;
     Fragment3 fragment3;
+    Fragment4 fragment4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mainActivityFragment = (MainActivityFragment)getSupportFragmentManager().findFragmentById(R.id.fragment);
-        fragment2 = (BlankFragment2)getSupportFragmentManager().findFragmentById(R.id.fragment2);
-        fragment3 = (Fragment3)getSupportFragmentManager().findFragmentById(R.id.fragment3);
+        mainActivityFragment = (MainActivityFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
+        fragment2 = (BlankFragment2) getSupportFragmentManager().findFragmentById(R.id.fragment2);
+        fragment3 = (Fragment3) getSupportFragmentManager().findFragmentById(R.id.fragment3);
+        fragment4 = (Fragment4) getSupportFragmentManager().findFragmentById(R.id.fragment4);
 
-        MainActivityEvents  mainActivityEvents = new MainActivityEvents(this);
+        MainActivityEvents mainActivityEvents = new MainActivityEvents(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(mainActivityEvents);
 
         mainActivityFragment.setListener(mainActivityEvents);
         fragment2.setListener(mainActivityEvents);
         fragment3.setListener(mainActivityEvents);
+        fragment4.setListener(mainActivityEvents);
 
         FragmentTransaction transition = getSupportFragmentManager().beginTransaction();
         transition.show(mainActivityFragment);
         transition.hide(fragment2);
         transition.hide(fragment3);
+        transition.hide(fragment4);
         transition.commit();
 
     }
