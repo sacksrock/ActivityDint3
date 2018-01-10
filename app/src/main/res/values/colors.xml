@@ -7,4 +7,8 @@
     <color name="colorButton">#088A85</color>
     <color name="colorButton2">#FF8000</color>
     <color name="colorBackground">#EE9999</color>
+    <color name="fondo1">#0080FF</color>
+    <color name="fondo2">#B40486</color>
+    <color name="fondo3">#58FA58</color>
+    <color name="fondo4">#6E6E6E</color>
 </resources>
