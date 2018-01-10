@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--definimos los colores para los stilos. -->
+    <color name="colorPrimary">#8F0F0F</color>
+    <color name="colorPrimaryDark">#DF2626</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButton">#088A85</color>
+    <color name="colorButton2">#FF8000</color>
+    <color name="colorBackground">#EE9999</color>
+</resources>
