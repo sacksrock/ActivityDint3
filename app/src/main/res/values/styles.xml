@@ -3,14 +3,17 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorButtonNormal">@color/colorButton</item>
-        <item name="android:background">@color/fondo1</item>
-
     </style>
     <!--definimos los temas para los fragments. -->
+    <style name="TemaFragment1" parent="ThemeOverlay.AppCompat.Dark">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="colorButtonNormal">@color/colorButton</item>
+    <item name="android:background">@color/fondo1</item>
+    <item name="android:textColorPrimary">@color/fondo2</item>
+    <item name="android:textColor">@color/fondo2</item>
+    </style>
     <!-- Base application theme. -->
     <style name="TemaFragment2" parent="ThemeOverlay.AppCompat.Dark">
         <!-- Customize your theme here. -->
@@ -19,6 +22,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorButtonNormal">@color/colorPrimaryDark</item>
         <item name="android:background">@color/fondo2</item>
+        <item name="android:textColorPrimary">@color/fondo1</item>
+        <item name="android:textColor">@color/fondo1</item>
 
     </style>
     <style name="TemaFragment3" parent="ThemeOverlay.AppCompat.Dark">
@@ -28,7 +33,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorButtonNormal">@color/colorButton2</item>
         <item name="android:background">@color/fondo3</item>
-
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
 
     </style>
 
