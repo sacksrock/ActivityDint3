@@ -38,6 +38,7 @@ public class MainActivityFragment extends Fragment {
 
         return v;
     }
+
 }
 class FragmentEvents1 implements View.OnClickListener{
     MainActivityFragment mainActivityFragment;
